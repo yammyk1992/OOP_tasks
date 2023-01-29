@@ -61,5 +61,6 @@ class FormLogin:
 
 
 # эти строчки не менять
-login = FormLogin(TextInput("Лоalsjdkashudkhaksuhdkuahskudhakshdioasoidhiashdoiahsoidhaoishdoiahsiodhoiahsodi"), PasswordInput("Па"))
+login = FormLogin(TextInput("Лоalsjdkashudkhaksuhdkuahskudhakshdioasoidhiashdoiahsoidhaoishdoiahsiodhoiahsodi"),
+                  PasswordInput("Па"))
 html = login.render_template()
