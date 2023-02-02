@@ -1,6 +1,5 @@
 class StackObj:
     """для описания объектов односвязного списка;"""
-
     def __init__(self, data):
         self.__data = data
         self.__next = None
@@ -25,7 +24,6 @@ class StackObj:
 
 class Stack:
     """для управления односвязным списком."""
-
     def __init__(self):
         self.top = None
         self.last = None
@@ -34,6 +32,8 @@ class Stack:
         """ добавление объекта класса StackObj в конец односвязного списка;"""
         if self.last:
             self.last.next = obj
+            print(self.last)
+            print(obj)
 
         self.last = obj
         if self.top is None:
