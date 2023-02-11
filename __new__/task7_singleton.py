@@ -23,7 +23,7 @@ class Singleton:
     count_obj = 0
 
     def __new__(cls, *args, **kwargs):
-        if cls.count_obj < 5:
+        if cls.count_obj < 999:
             cls._instance = super().__new__(cls)
             cls.count_obj += 1
         return cls._instance

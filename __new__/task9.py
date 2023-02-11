@@ -12,4 +12,4 @@ class Point:
 
 
 pt = Point(4, 5)
-pt.clone()
+print(pt.clone())
