@@ -33,10 +33,8 @@ class Handler:
         def wrapper(request, *args, **kwargs):
             m = request.get('method', 'GET')
             if m in self.__methods:
-                print(m, "MMMM")
                 method = m.lower()
                 return self.__getattribute__(method)(func, request)
-
         return wrapper
 
     def get(self, func, request, *args, **kwargs):
