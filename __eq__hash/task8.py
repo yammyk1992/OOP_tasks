@@ -20,14 +20,11 @@ class BookStudy:
 
 
 lst_bs = []
+
 for i in lst_in:
     args = list(map(str.strip, i.split(";")))
     args[-1] = int(args[-1])
     lst_bs.append(BookStudy(*args))
-# unique_books = 0
-# for y in lst_bs:
-#     if hash(y) == hash(y):
-#         unique_books += 1
-# print(unique_books)
+
 unique_books = len(set(hash((i.name, i.author)) for i in lst_bs))
 print(unique_books)
