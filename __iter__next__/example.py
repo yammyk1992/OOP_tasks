@@ -6,6 +6,7 @@ class FRange:
 
     def __iter__(self):
         """ получение итератора для перебора объекта"""
+        """возвращает перебиратор"""
         self.value = self.start - self.step
         return self
 
